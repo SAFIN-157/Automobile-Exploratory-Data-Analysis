@@ -3,6 +3,7 @@ This repository provides a complete Exploratory Data Analysis (EDA) workflow for
 The project focuses on understanding feature patterns, relationships, and statistical insights before model development.
 ________________________________________
 📌 Dataset Overview
+
 •	Source: UCI Machine Learning Repository – Automobile Dataset
 •	Rows: 205
 •	Attributes: 26 (mix of categorical, continuous, and integer values)
