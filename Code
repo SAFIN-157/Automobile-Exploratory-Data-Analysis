@@ -1,0 +1,94 @@
+import pandas as pd
+import matplotlib.pylab as plt
+import numpy as np
+filepath="/clean_df (1).csv"
+df = pd.read_csv(filepath)
+df.head()
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+%matplotlib inline
+
+numeric_df = df.select_dtypes(include=['float64', 'int64'])
+numeric_df.corr()
+
+import numpy as np
+df[['bore', 'stroke', 'compression-ratio', 'horsepower']].corr()
+
+sns.regplot(x="engine-size", y="price", data=df)
+plt.ylim(0,)
+
+df[["engine-size", "price"]].corr()
+sns.regplot(x="peak-rpm", y="price", data=df)
+plt.ylim(0,)
+df[['peak-rpm','price']].corr()
+df[['stroke','price']].corr()
+sns.regplot(x="stroke", y="price", data=df)
+
+sns.boxplot(x="body-style", y="price", data=df)
+sns.boxplot(x="engine-location", y="price", data=df)
+sns.boxplot(x="drive-wheels", y="price", data=df)
+df.describe()
+
+df['drive-wheels'].unique()
+df_group_one = df[['drive-wheels','body-style','price']]
+df_grouped = df_group_one.groupby(['drive-wheels'], as_index=False).agg({'price': 'mean'})
+df_grouped
+df_gptest = df[['drive-wheels','body-style','price']]
+grouped_test1 = df_gptest.groupby(['drive-wheels','body-style'],as_index=False).mean()
+grouped_test1
+grouped_pivot = grouped_test1.pivot(index='drive-wheels',columns='body-style')
+grouped_pivot
+grouped_pivot = grouped_pivot.fillna(0) #fill missing values with 0
+grouped_pivot
+df_group_one = df[['body-style','price']]
+df_grouped = df_group_one.groupby(['body-style'], as_index=False).mean()
+df_grouped
+
+import matplotlib.pyplot as plt
+%matplotlib inline
+plt.pcolor(grouped_pivot, cmap='RdBu')
+plt.colorbar()
+plt.show()
+
+fig, ax = plt.subplots()
+im = ax.pcolor(grouped_pivot, cmap='RdBu')
+row_labels = grouped_pivot.columns.levels[1]
+col_labels = grouped_pivot.index
+ax.set_xticks(np.arange(grouped_pivot.shape[1]) + 0.5, minor=False)
+ax.set_yticks(np.arange(grouped_pivot.shape[0]) + 0.5, minor=False)
+ax.set_xticklabels(row_labels, minor=False)
+ax.set_yticklabels(col_labels, minor=False)
+plt.xticks(rotation=90)
+fig.colorbar(im)
+plt.show()
+
+df.select_dtypes(include=['number']).corr()
+
+from scipy import stats
+pearson_coef, p_value = stats.pearsonr(df['wheel-base'], df['price'])
+print("The Pearson Correlation Coefficient is", pearson_coef, " with a P-value of P =", p_value)
+pearson_coef, p_value = stats.pearsonr(df['horsepower'], df['price'])
+print("The Pearson Correlation Coefficient is", pearson_coef, " with a P-value of P = ", p_value)
+pearson_coef, p_value = stats.pearsonr(df['length'], df['price'])
+print("The Pearson Correlation Coefficient is", pearson_coef, " with a P-value of P = ", p_value)
+pearson_coef, p_value = stats.pearsonr(df['width'], df['price'])
+print("The Pearson Correlation Coefficient is", pearson_coef, " with a P-value of P =", p_value )
+pearson_coef, p_value = stats.pearsonr(df['curb-weight'], df['price'])
+print( "The Pearson Correlation Coefficient is", pearson_coef, " with a P-value of P = ", p_value)
+pearson_coef, p_value = stats.pearsonr(df['engine-size'], df['price'])
+print("The Pearson Correlation Coefficient is", pearson_coef, " with a P-value of P =", p_value)
+pearson_coef, p_value = stats.pearsonr(df['bore'], df['price'])
+print("The Pearson Correlation Coefficient is", pearson_coef, " with a P-value of P =  ", p_value )
+pearson_coef, p_value = stats.pearsonr(df['city-L/100km'], df['price'])
+print("The Pearson Correlation Coefficient is", pearson_coef, " with a P-value of P = ", p_value)
+pearson_coef, p_value = stats.pearsonr(df['highway-L/100km'], df['price'])
+print( "The Pearson Correlation Coefficient is", pearson_coef, " with a P-value of P = ", p_value )
+
+or 
+
+from scipy import stats
+for param in ['wheel-base','horsepower','length','width','curb-weight','engine-size','bore','city-L/100km','highway-L/100km']:
+    pearson_coef, p_value = stats.pearsonr(df[param], df['price'])
+    print(param)
+    print("The Pearson Correlation Coefficient for", param, "is", pearson_coef, " with a P-value of P =", p_value)
