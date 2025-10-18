@@ -14,14 +14,14 @@ ________________________________________
 ________________________________________
 ⚙️ EDA Workflow
 
-1. Import Data and Assign Column Headers
+## Import Data and Assign Column Headers
 
 •	Load the dataset and assign meaningful, descriptive column names for better readability.
 
 •	Display basic information (.info(), .head(), .describe()) to understand data structure and data types.
 
 
-2. Analyzing Individual Feature Patterns Using Visualization
+## Analyzing Individual Feature Patterns Using Visualization
 
 •	Use histograms, boxplots, and count plots to visualize the distribution of each feature.
 
@@ -30,14 +30,14 @@ ________________________________________
 •	Examine the frequency and diversity of categories for categorical variables.
 
 
-3. Correlation Analysis
+## Correlation Analysis
    
 •	Compute and visualize pairwise correlations among numerical variables using the .corr() method.
 
 •	Identify potential linear relationships or multicollinearity among features.
 
 
-4. Focused Correlation Study
+## Focused Correlation Study
    
 Analyze relationships between the following numerical features:
 
@@ -49,7 +49,7 @@ Analyze relationships between the following numerical features:
 Generate correlation metrics and interpret the degree of linear association between them.
 
 
-5. Scatterplot with Fitted Regression Line
+## Scatterplot with Fitted Regression Line
    
 •	Visualize pairwise relationships using scatterplots.
 
@@ -58,7 +58,7 @@ Generate correlation metrics and interpret the degree of linear association betw
 •	Example: horsepower vs. price.
 
 
-6. Categorical Variables
+## Categorical Variables
    
 •	Examine categorical attributes such as make, fuel-type, body-style, etc.
 
@@ -67,7 +67,7 @@ Generate correlation metrics and interpret the degree of linear association betw
 •	Explore relationships between categorical and continuous variables using boxplots or violin plots.
 
 
-7. Descriptive Statistical Analysis
+## Descriptive Statistical Analysis
    
 •	Summarize central tendency, dispersion, and distribution using:
 o	.describe() for numerical data
@@ -76,21 +76,21 @@ o	.value_counts() for categorical data
 •	Compare mean, median, and standard deviation across different variables.
 
 
-8. Basics of Grouping
+## Basics of Grouping
    
 •	Use groupby() operations to analyze aggregated statistics by categories (e.g., make or drive-wheels).
 
 •	Identify which groups exhibit higher or lower mean prices or performance metrics.
 
 
-9. Heatmap Visualization
+## Heatmap Visualization
     
 •	Create a correlation heatmap to visualize relationships among numerical features.
 
 •	Highlight strongly correlated or inverse-correlated variable pairs.
 
 
-10. Pearson Correlation and P-Value
+## Pearson Correlation and P-Value
     
 •	Calculate Pearson correlation coefficients and corresponding p-values to measure the strength and statistical significance of relationships.
 
