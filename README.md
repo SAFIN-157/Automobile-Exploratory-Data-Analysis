@@ -5,8 +5,11 @@ ________________________________________
 📌 Dataset Overview
 
 •	Source: UCI Machine Learning Repository – Automobile Dataset
+
 •	Rows: 205
+
 •	Attributes: 26 (mix of categorical, continuous, and integer values)
+
 •	Common Target Variable: price
 ________________________________________
 ⚙️ EDA Workflow
