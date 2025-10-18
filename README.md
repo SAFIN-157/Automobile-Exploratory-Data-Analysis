@@ -9,7 +9,7 @@ ________________________________________
 •	Common Target Variable: price
 ________________________________________
 ⚙️ EDA Workflow
-1. Import Data and Assign Column Headers
+1. Import Data and Assign Column Headers:
 •	Load the dataset and assign meaningful, descriptive column names for better readability.
 •	Display basic information (.info(), .head(), .describe()) to understand data structure and data types.
 
