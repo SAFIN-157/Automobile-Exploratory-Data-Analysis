@@ -4,14 +4,18 @@ Automobile dataset was from the UCI Machine Learning Repository.
 The project focuses on understanding feature patterns, relationships, and statistical insights before model development.
 ________________________________________
 # 📌 **Dataset Overview**
+## 1
 
-•	Source: UCI Machine Learning Repository – Automobile Dataset
+- Source: UCI Machine Learning Repository – Automobile Dataset
 
-•	Rows: 205
+- Rows: 205
 
-•	Attributes: 26 (mix of categorical, continuous, and integer values)
+- Attributes: 26 (mix of categorical, continuous, and integer values)
 
-•	Common Target Variable: price
+- Common Target Variable: price
+
+## 2
+- Laptop Pricing Dataset
 ________________________________________
 # ⚙️ **EDA Workflow**
 
