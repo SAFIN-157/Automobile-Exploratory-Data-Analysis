@@ -1,9 +1,9 @@
-# Automobile Data Exploratory Data Analysis (UCI Imports-85)
+# Data Exploratory Data Analysis (UCI Imports-85)
 This repository provides a complete Exploratory Data Analysis (EDA) workflow for the **Automobile (Imports-85) Dataset** and **Laptop Pricing dataset**. 
 Automobile dataset was from the UCI Machine Learning Repository.
 The project focuses on understanding feature patterns, relationships, and statistical insights before model development.
 ________________________________________
-📌 **Dataset Overview**
+# 📌 **Dataset Overview**
 
 •	Source: UCI Machine Learning Repository – Automobile Dataset
 
@@ -40,7 +40,7 @@ ________________________________________
 
 ## Focused Correlation Study
    
-Analyze relationships between the following numerical features:
+From Automobile dataset, analyze relationships between the following numerical features:
 
 •	bore
 •	stroke
@@ -98,7 +98,7 @@ o	.value_counts() for categorical data
 •	Interpret the results to identify which features are meaningfully correlated with key targets like price.
 
 ________________________________________
-📊 Outcome
+# 📊 **Outcome**
 
 •	Comprehensive understanding of data distribution, feature relationships, and key patterns.
 
@@ -106,7 +106,7 @@ ________________________________________
 
 •	Reusable EDA pipeline applicable to similar structured datasets.
 ________________________________________
-🧰 Tools & Libraries
+# 🧰 **Tools & Libraries**
 
 •	Python
 •	Pandas, NumPy – data manipulation
