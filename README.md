@@ -21,98 +21,98 @@ ________________________________________
 
 ## Import Data and Assign Column Headers
 
-•	Load the dataset and assign meaningful, descriptive column names for better readability.
+- Load the dataset and assign meaningful, descriptive column names for better readability.
 
-•	Display basic information (.info(), .head(), .describe()) to understand data structure and data types.
+- Display basic information (.info(), .head(), .describe()) to understand data structure and data types.
 
 
 ## Analyzing Individual Feature Patterns Using Visualization
 
-•	Use histograms, boxplots, and count plots to visualize the distribution of each feature.
+- Use histograms, boxplots, and count plots to visualize the distribution of each feature.
 
-•	Identify outliers, skewness, and spread for numerical features.
+- Identify outliers, skewness, and spread for numerical features.
 
-•	Examine the frequency and diversity of categories for categorical variables.
+- Examine the frequency and diversity of categories for categorical variables.
 
 
 ## Correlation Analysis
    
-•	Compute and visualize pairwise correlations among numerical variables using the .corr() method.
+- Compute and visualize pairwise correlations among numerical variables using the .corr() method.
 
-•	Identify potential linear relationships or multicollinearity among features.
+- Identify potential linear relationships or multicollinearity among features.
 
 
 ## Focused Correlation Study
    
 From Automobile dataset, analyze relationships between the following numerical features:
 
-•	bore
-•	stroke
-•	compression-ratio
-•	horsepower
+- bore
+- stroke
+- compression-ratio
+- horsepower
 
 Generate correlation metrics and interpret the degree of linear association between them.
 
 
 ## Scatterplot with Fitted Regression Line
    
-•	Visualize pairwise relationships using scatterplots.
+- Visualize pairwise relationships using scatterplots.
 
-•	Add regression lines to evaluate trends and linear patterns (e.g., seaborn.regplot).
+- Add regression lines to evaluate trends and linear patterns (e.g., seaborn.regplot).
 
-•	Example: horsepower vs. price.
+- Example: horsepower vs. price.
 
 
 ## Categorical Variables
    
-•	Examine categorical attributes such as make, fuel-type, body-style, etc.
+- Examine categorical attributes such as make, fuel-type, body-style, etc.
 
-•	Use bar plots and count plots to visualize category frequencies.
+- Use bar plots and count plots to visualize category frequencies.
 
-•	Explore relationships between categorical and continuous variables using boxplots or violin plots.
+- Explore relationships between categorical and continuous variables using boxplots or violin plots.
 
 
 ## Descriptive Statistical Analysis
    
-•	Summarize central tendency, dispersion, and distribution using:
+- Summarize central tendency, dispersion, and distribution using:
 o	.describe() for numerical data
 o	.value_counts() for categorical data
 
-•	Compare mean, median, and standard deviation across different variables.
+- Compare mean, median, and standard deviation across different variables.
 
 
 ## Basics of Grouping
    
-•	Use groupby() operations to analyze aggregated statistics by categories (e.g., make or drive-wheels).
+- Use groupby() operations to analyze aggregated statistics by categories (e.g., make or drive-wheels).
 
-•	Identify which groups exhibit higher or lower mean prices or performance metrics.
+- Identify which groups exhibit higher or lower mean prices or performance metrics.
 
 
 ## Heatmap Visualization
     
-•	Create a correlation heatmap to visualize relationships among numerical features.
+- Create a correlation heatmap to visualize relationships among numerical features.
 
-•	Highlight strongly correlated or inverse-correlated variable pairs.
+- Highlight strongly correlated or inverse-correlated variable pairs.
 
 
 ## Pearson Correlation and P-Value
     
-•	Calculate Pearson correlation coefficients and corresponding p-values to measure the strength and statistical significance of relationships.
+- Calculate Pearson correlation coefficients and corresponding p-values to measure the strength and statistical significance of relationships.
 
-•	Interpret the results to identify which features are meaningfully correlated with key targets like price.
+- Interpret the results to identify which features are meaningfully correlated with key targets like price.
 
 ________________________________________
 # 📊 **Outcome**
 
-•	Comprehensive understanding of data distribution, feature relationships, and key patterns.
+- Comprehensive understanding of data distribution, feature relationships, and key patterns.
 
-•	Visual and statistical insights to guide further modeling and preprocessing.
+- Visual and statistical insights to guide further modeling and preprocessing.
 
-•	Reusable EDA pipeline applicable to similar structured datasets.
+- Reusable EDA pipeline applicable to similar structured datasets.
 ________________________________________
 # 🧰 **Tools & Libraries**
 
-•	Python
-•	Pandas, NumPy – data manipulation
-•	Matplotlib, Seaborn – visualization
-•	SciPy – correlation and statistical testing
+- Python
+- Pandas, NumPy – data manipulation
+- Matplotlib, Seaborn – visualization
+- SciPy – correlation and statistical testing
