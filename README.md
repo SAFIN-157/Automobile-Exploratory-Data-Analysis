@@ -1,5 +1,6 @@
 # Automobile Data Exploratory Data Analysis (UCI Imports-85)
-This repository provides a complete Exploratory Data Analysis (EDA) workflow for the Automobile (Imports-85) dataset from the UCI Machine Learning Repository.
+This repository provides a complete Exploratory Data Analysis (EDA) workflow for the **Automobile (Imports-85) Dataset** and **Laptop Pricing dataset**. 
+Automobile dataset was from the UCI Machine Learning Repository.
 The project focuses on understanding feature patterns, relationships, and statistical insights before model development.
 ________________________________________
 📌 Dataset Overview
